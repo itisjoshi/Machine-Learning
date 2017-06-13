@@ -181,3 +181,13 @@ hθ(x)=[θ0θ1...θn]⎡⎣⎢⎢⎢⎢x0x1⋮xn⎤⎦⎥⎥⎥⎥=θTx
 This is a vectorization of our hypothesis function for one training example; see the lessons on vectorization to learn more.
 
 Remark: Note that for convenience reasons in this course we assume x(i)0=1 for (i∈1,…,m). This allows us to do matrix operations with theta and x. Hence making the two vectors 'θ' and x(i) match each other element-wise (that is, have the same number of elements: n+1).]
+
+# Gradient Descent For Multiple Variables
+
+The gradient descent equation itself is generally the same form; we just have to repeat it for our 'n' features:
+
+}repeat until convergence:{θ0:=θ0−α1m∑i=1m(hθ(x(i))−y(i))⋅x(i)0θ1:=θ1−α1m∑i=1m(hθ(x(i))−y(i))⋅x(i)1θ2:=θ2−α1m∑i=1m(hθ(x(i))−y(i))⋅x(i)2⋯
+In other words:
+
+}repeat until convergence:{θj:=θj−α1m∑i=1m(hθ(x(i))−y(i))⋅x(i)jfor j := 0...n
+The following image compares gradient descent with one variable to gradient descent with multiple variables:
