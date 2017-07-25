@@ -1,7 +1,6 @@
-i am trask
-HOME
-ABOUT
-CONTACT
+https://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/
+
+
 Anyone Can Learn To Code an LSTM-RNN in Python (Part 1: RNN)
 Baby steps to your neural network's first memories.
 
@@ -143,6 +142,7 @@ for j in range(10000):
         
 ```
  
+```python
 Runtime Output:
 Error:[ 3.45638663]
 Pred:[0 0 0 0 0 0 0 1]
@@ -194,6 +194,8 @@ Pred:[0 0 0 0 1 1 1 0]
 True:[0 0 0 0 1 1 1 0]
 11 + 3 = 14
 ------------
+
+```
 Part 1: What is Neural Memory?
 List the alphabet forward.... you can do it, yes?
 
